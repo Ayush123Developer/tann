@@ -1,5 +1,11 @@
+import App from "./conponents/App";
+
 function index() {
-  return <>Hello World!</>;
+  return (
+    <>
+      <App />
+    </>
+  );
 }
 
 export default index;

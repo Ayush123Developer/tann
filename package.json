@@ -1,22 +1,21 @@
 {
-  "name": "mynextapp",
+  "name": "tann-trim",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "postbuild": "node ./src/scripts/build-algolia-search.js",
-    "postbuild": "next-sitemap",
-    "start": "next start",
-    "test": "jest"
-  },
+  "scripts": { 
+    "dev": "next",       
+    "build": "next build", 
+    "start": "next start", 
+    "prod": "next export"  
+},
   "dependencies": {
-    "next": "^12.1.7-canary.40",
+    "axios": "^0.27.2",
+    "next": "^12.1.7-canary.41",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "eslint": "8.17.0",
+    "eslint": "8.18.0",
     "eslint-config-next": "12.1.6"
   }
 }
