@@ -17,9 +17,6 @@ function App() {
       .then((response) => {
         setData(response.data.data.products);
         console.log(response.data.data.products);
-      })
-      .catch((error) => {
-        console.log(error);
       });
   }, []);
   return (
