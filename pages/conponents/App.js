@@ -40,6 +40,7 @@ function App() {
                     src={element.plpimaage}
                     width="288.39px"
                     height="380px"
+                    alt="Image"
                   ></Image>
                   <a className="img-icon">
                     <svg
