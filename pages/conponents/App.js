@@ -16,7 +16,6 @@ function App() {
       )
       .then((response) => {
         setData(response.data.data.products);
-        console.log(response.data.data.products);
       });
   }, []);
   return (
