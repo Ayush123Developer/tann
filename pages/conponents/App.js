@@ -28,7 +28,7 @@ function App() {
         <Bags />
         <Cart />
         <div className="cards">
-          {data.map((element, index) => (
+          {data.map((element) => (
             <>
               <div className="card">
                 <div className="img-tag">
