@@ -1,16 +1,15 @@
-body{
+body {
   padding: 0;
   margin: 0;
-  background-color: #0C0C0C;
-  color: #E5DFD9;
+  background-color: #0c0c0c;
+  color: #e5dfd9;
   box-sizing: border-box;
   font-family: Encode Sans;
 }
 
-
 /* Navbar */
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -18,36 +17,35 @@ body{
   height: 70px;
 }
 
-.menubar{
+.menubar {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.title{
+.title {
   height: 28px;
   letter-spacing: 0.55em;
   padding-top: 20px;
   padding-left: 25px;
 }
 
-.menubar h3{
+.menubar h3 {
   margin: 0 15px;
   font-weight: 400;
   font-size: 18px;
-
 }
 
-.icons{
+.icons {
   padding-top: 20px;
   padding-right: 10px;
 }
 
-.icons span{
+.icons span {
   margin: 0 10px;
 }
 
-.all-bags{
+.all-bags {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,183 +54,178 @@ body{
   padding-top: 35px;
 }
 
-.cart{
+.cart {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.bag-bagpacks{
+.bag-bagpacks {
   margin: 0 20px;
   padding-top: 20px;
 }
 
-.cart-icon{
+.cart-icon {
   padding-top: 20px;
   margin: 0 20px;
 }
 
-.carticon{
-  margin-left: 10px ;
+.carticon {
+  margin-left: 10px;
 }
 
-.cards{
+.cards {
   display: flex;
   /* flex-direction: row; */
   gap: 32px;
   padding-top: 50px;
   padding-left: 10px;
   flex-wrap: wrap;
-  
-  
 }
 
-.card{
+.card {
   /* padding-top: 0px; */
-  background-color:#141414;;
+  background-color: #141414;
   border-radius: 4px 4px 17.0823px 17.0823px;
   overflow: hidden;
   width: 288.39px;
   height: 535 px;
-  
 }
 
-.img-tag{ 
-   position: relative;
-} 
+.img-tag {
+  position: relative;
+}
 
-
-.img-tag Image{
+.img-tag Image {
   display: block;
 }
 
-.img-icon{
-  position: absolute; bottom:0; right: 15px;
+.img-icon {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
   top: 15px;
 }
 
-.contain-price{
+.contain-price {
   display: flex;
 }
 
-.name{
+.name {
   font-size: 19px;
   padding: 0 10px;
   letter-spacing: 0.55;
   font-weight: 300;
 }
 
-.card-contain{
+.card-contain {
   display: flex;
   padding: 0 10px;
   align-items: center;
   justify-content: space-between;
   /* align-items: baseline; */
-  color: #E5DFD9;
+  color: #e5dfd9;
 }
 
-.price{
+.price {
   padding-top: 0px;
   font-size: 25px;
 }
 
-.contain-price{
-/* align-items: baseline; */
-    display: flex;
-    align-items: baseline;
-    gap: 7px;
+.contain-price {
+  /* align-items: baseline; */
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
 }
 
-.MRP{
+.MRP {
   text-decoration: line-through;
 }
 
-.off{
+.off {
   color: green;
 }
 
-.container{
+.container {
   padding-bottom: 50px;
 }
 
-
 /* Responsive */
 
-@media (max-width:1560px) {
-  .cards{
+@media (max-width: 1560px) {
+  .cards {
     padding-left: 150px;
   }
 }
 
-@media (max-width:1440px) {
-  /* .container{
-    width: 100%;
-  } */
+@media (max-width: 1440px) {
 
-  .cards{
+  .cards {
     padding-left: 45px;
   }
 }
 
-@media (max-width:1024px) {
-  .cards{
+@media (max-width: 1024px) {
+  .cards {
     padding-left: 45px;
   }
 }
 
-@media (max-width:768px){
-.bag{
-  margin: 0px 20px;
-}
+@media (max-width: 768px) {
+  .bag {
+    margin: 0px 20px;
+  }
 
-.all-bags{
-  /* width: 98%; */
+  .all-bags {
+    /* width: 98%; */
     overflow-y: auto;
-}
-.title{
-  font-size: 12px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .all-bags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cards {
+    padding-left: 80px;
+    gap: 50px;
+  }
 }
 
-.all-bags::-webkit-scrollbar{
-  display: none;
-}
-
-.cards{
-  padding-left: 80px;
-  gap: 50px;
-}
-}
-
-@media (max-width: 425px){
-  .menubar{
+@media (max-width: 425px) {
+  .menubar {
     overflow-x: scroll;
     justify-content: start;
   }
-  .cards{
+
+  .menubar::-webkit-scrollbar {
+    display: none;
+  }
+  .cards {
     padding-left: 65px;
   }
 }
 
-
-@media (max-width:375px) {
-  .cards{
+@media (max-width: 375px) {
+  .cards {
     padding-left: 40px;
   }
 
-  .menubar{
+  .menubar {
     overflow-x: scroll;
     justify-content: start;
   }
 }
 
 @media (max-width: 320px) {
-  .cards{
+  .cards {
     padding-left: 15px;
   }
 
-  .menubar{
+  .menubar {
     overflow-x: scroll;
   }
 }
-
-
