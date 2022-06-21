@@ -1,4 +1,5 @@
 function Navbar() {
+  //nav
   return (
     <>
       <div className="navbar">
