@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node ./src/scripts/build-algolia-search.js",
+    "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "test": "jest"
   },
   "dependencies": {
     "next": "^12.1.7-canary.40",
